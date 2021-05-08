@@ -1,0 +1,25 @@
+service: ultraviolet-api-rbolox
+
+provider:
+    name: aws
+    runtime: nodejs12.x
+    memorySize: 1500
+    timeout: 300
+    ecr:
+        images:
+            ultraviolet-api-roblox:
+                path: ./
+
+functions:
+    api:
+        image:
+            name: ultraviolet-api-roblox
+        events:
+            - http:
+                  path: /
+                  method: any
+                  cors: true
+            - http:
+                  path: /{proxy+}
+                  method: any
+                  cors: true

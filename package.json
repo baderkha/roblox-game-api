@@ -4,7 +4,8 @@
   "description": "Roblox helper api",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "isLocal=true node index.js",
+    "deploy": "node ./node_modules/serverless/bin/serverless.js deploy"
   },
   "keywords": [
     "Roblox",
@@ -16,7 +17,11 @@
   "dependencies": {
     "express": "^4.17.1",
     "expresss": "0.0.0",
+    "serverless-http": "^2.7.0",
     "text2png": "^2.3.0",
     "uuidv4": "^6.2.7"
+  },
+  "devDependencies": {
+    "serverless": "^2.40.0"
   }
 }

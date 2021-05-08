@@ -1,0 +1,22 @@
+{
+  "name": "roblox-api",
+  "version": "1.0.0",
+  "description": "Roblox helper api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Roblox",
+    "helper",
+    "api"
+  ],
+  "author": "Ahmad Baderkhan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "expresss": "0.0.0",
+    "text2png": "^2.3.0",
+    "uuidv4": "^6.2.7"
+  }
+}
